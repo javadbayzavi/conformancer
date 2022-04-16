@@ -6,6 +6,7 @@ class baseModel
 {
     protected int Id;
     public __constructor(){}
+
     public getId(): int{
         return $this->uId;
     }
