@@ -1,6 +1,6 @@
 <?php
 
-namespace lib\model;
+namespace Core\Models;
 
 
 class baseModel
