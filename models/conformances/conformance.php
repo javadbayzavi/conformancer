@@ -13,7 +13,7 @@ class conformance extends baseModel
     private string $reasons;
     private issuer $issuer;
     private conformanceState $currentstatus;
-
+    private array $conformanceLog;
 
     public function getTitle(): string
     {
@@ -68,6 +68,15 @@ class conformance extends baseModel
     public function getStatus():conformanceState
     {
         return $this->currentstatus;
+    }
+
+    public function setLog(array $value):void
+    {
+        $this->conformanceLog   = $value;
+    }
+    public function getLog():array
+    {
+        return $this->conformanceLog;
     }
 
 

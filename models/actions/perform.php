@@ -4,13 +4,14 @@ namespace Models\actions;
 include "../../lib/model/baseModel.php";
 
 use Core\Models\baseModel as baseModel;
+use Models\actions\action;
 
-class action extends baseModel
+class perform extends baseModel
 {
     private string $title;
     private string $start;
     private string $end;
-    private  array $performs;
+    private action $action;
 
     public function getTitle():string
     {
@@ -39,13 +40,13 @@ class action extends baseModel
         $this->end = $value;
     }
 
-    public function getPerforms():array
+    public function getAction():action
     {
-        return $this->performs;
+        return $this->action    ;
     }    
-    public function setPerforms(array $value):void
+    public function setAction(action $value):void
     {
-        $this->performs = $value;
+        $this->action = $value;
     }
 
 }
