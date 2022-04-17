@@ -1,2 +1,2 @@
-# internship
- A simple package to manage all the external internship requests for an organization
+# conformancer
+ A simple package to manage all the external /  internal conformances and inconformances being issued for an organization
