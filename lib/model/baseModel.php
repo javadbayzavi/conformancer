@@ -1,19 +1,25 @@
 <?php
 
-namespace lib\model\;
+namespace lib\model;
+
 
 class baseModel
 {
-    protected int Id;
-    public __constructor(){}
+    protected int $Id;
 
-    public getId(): int{
-        return $this->uId;
+    public function getId(): int{
+        return $this->Id;
     }
 
-    public setId(int $value): void
+    
+    public function setId(int $value): void
     {
         $this->Id = $value;
+    }
+    
+    private function uniqueIdGenerator(): int
+    {
+        return new random_int(0, 32780);
     }
 }
 
