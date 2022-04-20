@@ -1,8 +1,9 @@
 <?php  
 namespace Core\Services;
 use Core\Models\baseModel as Model;
+user Core\Services\iservice;
 
-abstract class service
+abstract class service implements iservice
 {
     function Insert(Model $T_Model):bool
     {
