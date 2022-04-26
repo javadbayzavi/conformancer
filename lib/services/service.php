@@ -1,7 +1,7 @@
 <?php  
 namespace Core\Services;
 use Core\Models\baseModel as Model;
-user Core\Services\iservice;
+use Core\Services\iservice;
 
 abstract class service implements iservice
 {

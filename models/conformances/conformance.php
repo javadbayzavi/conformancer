@@ -4,6 +4,7 @@ include "../../lib/model/baseModel.php";
 
 use Core\Models\baseModel as baseModel;
 use Models\issuers\issuer;
+use Models\actions;
 
 class conformance extends baseModel
 {
@@ -14,6 +15,8 @@ class conformance extends baseModel
     private issuer $issuer;
     private conformanceState $currentstatus;
     private array $conformanceLog;
+    private string $problemDocument;
+    private array $actions;
 
     public function getTitle(): string
     {
@@ -77,6 +80,23 @@ class conformance extends baseModel
     public function getLog():array
     {
         return $this->conformanceLog;
+    }
+
+    public function setDocument(string $value):void
+    {
+        $this->problemDocument   = $value;
+    }
+    public function getDocument():string
+    {
+        return $this->problemDocument;
+    }
+    public function setActions(array $value):void
+    {
+        $this->actions   = $value;
+    }
+    public function getActions():array
+    {
+        return $this->actions;
     }
 
 

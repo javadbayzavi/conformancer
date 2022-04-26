@@ -1,9 +1,6 @@
-/*
-
-*/
 <?php 
-declare('type_strict = 1');
-namespace Services\issuers;
+
+namespace Services\Issuers;
 
 include_once "../lib/services/service.php";
 use Core\Services\service;
@@ -30,4 +27,4 @@ class issuerService extends service
         return true;
     }
 }
->
+?>
