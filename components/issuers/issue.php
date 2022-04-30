@@ -11,7 +11,7 @@ class issue extends baseComponent
     }
     public function Index():void
     {
-
+        
     }
 
     public function Create():void
